@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96C2A7521CE322F000EF7051 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2A7511CE322F000EF7051 /* AppDelegate.swift */; };
+		96C2A7541CE322F000EF7051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C2A7531CE322F000EF7051 /* Assets.xcassets */; };
+		96C2A7571CE322F000EF7051 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C2A7551CE322F000EF7051 /* MainMenu.xib */; };
+		96DEB3461CE4257D00BD24D9 /* ext_AVCaptureDeviceFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB3451CE4257D00BD24D9 /* ext_AVCaptureDeviceFormat.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		96C2A74E1CE322F000EF7051 /* AwSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C2A7511CE322F000EF7051 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96C2A7531CE322F000EF7051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96C2A7561CE322F000EF7051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		96C2A7581CE322F000EF7051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96DEB3451CE4257D00BD24D9 /* ext_AVCaptureDeviceFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ext_AVCaptureDeviceFormat.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96C2A74B1CE322F000EF7051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96C2A7451CE322F000EF7051 = {
+			isa = PBXGroup;
+			children = (
+				96C2A7501CE322F000EF7051 /* AwSnap */,
+				96C2A74F1CE322F000EF7051 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96C2A74F1CE322F000EF7051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96C2A74E1CE322F000EF7051 /* AwSnap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96C2A7501CE322F000EF7051 /* AwSnap */ = {
+			isa = PBXGroup;
+			children = (
+				96DEB3451CE4257D00BD24D9 /* ext_AVCaptureDeviceFormat.swift */,
+				96C2A7511CE322F000EF7051 /* AppDelegate.swift */,
+				96C2A7531CE322F000EF7051 /* Assets.xcassets */,
+				96C2A7551CE322F000EF7051 /* MainMenu.xib */,
+				96C2A7581CE322F000EF7051 /* Info.plist */,
+			);
+			name = AwSnap;
+			path = AwSnap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96C2A74D1CE322F000EF7051 /* AwSnap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96C2A75B1CE322F000EF7051 /* Build configuration list for PBXNativeTarget "AwSnap" */;
+			buildPhases = (
+				96C2A74A1CE322F000EF7051 /* Sources */,
+				96C2A74B1CE322F000EF7051 /* Frameworks */,
+				96C2A74C1CE322F000EF7051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AwSnap;
+			productName = AwSnap;
+			productReference = 96C2A74E1CE322F000EF7051 /* AwSnap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96C2A7461CE322F000EF7051 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = USRZ.com;
+				TargetAttributes = {
+					96C2A74D1CE322F000EF7051 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 96C2A7491CE322F000EF7051 /* Build configuration list for PBXProject "AwSnap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96C2A7451CE322F000EF7051;
+			productRefGroup = 96C2A74F1CE322F000EF7051 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96C2A74D1CE322F000EF7051 /* AwSnap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96C2A74C1CE322F000EF7051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C2A7541CE322F000EF7051 /* Assets.xcassets in Resources */,
+				96C2A7571CE322F000EF7051 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96C2A74A1CE322F000EF7051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96DEB3461CE4257D00BD24D9 /* ext_AVCaptureDeviceFormat.swift in Sources */,
+				96C2A7521CE322F000EF7051 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96C2A7551CE322F000EF7051 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96C2A7561CE322F000EF7051 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96C2A7591CE322F000EF7051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96C2A75A1CE322F000EF7051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		96C2A75C1CE322F000EF7051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AwSnap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.usrz.osx.AwSnap;
+				PRODUCT_NAME = AwSnap;
+			};
+			name = Debug;
+		};
+		96C2A75D1CE322F000EF7051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AwSnap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.usrz.osx.AwSnap;
+				PRODUCT_NAME = AwSnap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96C2A7491CE322F000EF7051 /* Build configuration list for PBXProject "AwSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C2A7591CE322F000EF7051 /* Debug */,
+				96C2A75A1CE322F000EF7051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96C2A75B1CE322F000EF7051 /* Build configuration list for PBXNativeTarget "AwSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C2A75C1CE322F000EF7051 /* Debug */,
+				96C2A75D1CE322F000EF7051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96C2A7461CE322F000EF7051 /* Project object */;
+}

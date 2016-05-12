@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="cGW-Im-1hE"/>
+            </connections>
+        </customObject>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="AwSnap" customModuleProvider="target">
+            <connections>
+                <outlet property="settings" destination="ggh-Fn-57L" id="4fE-ga-agY"/>
+                <outlet property="view" destination="EiT-Mj-1SZ" id="Cje-Wg-8vh"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="AwSnap" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="AwSnap" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About AwSnap" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                            <menuItem title="Services" id="NMo-om-nkz">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                            <menuItem title="Hide AwSnap" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Quit AwSnap" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="dMs-cI-mzQ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="File" id="VK0-Vm-Fij">
+                        <items>
+                            <menuItem title="Close" keyEquivalent="w" id="cpy-8w-FbE">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="8dw-2j-bQ2"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES" fullSizeContentView="YES"/>
+            <rect key="contentRect" x="0.0" y="0.0" width="513" height="356"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <value key="minSize" type="size" width="160" height="160"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="513" height="356"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <button ambiguous="YES" misplaced="YES" alphaValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QYb-Zi-UsX">
+                        <rect key="frame" x="224" y="20" width="64" height="64"/>
+                        <shadow key="shadow" blurRadius="5">
+                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </shadow>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Camera" imagePosition="only" alignment="center" alternateImage="Camera" imageScaling="proportionallyUpOrDown" inset="2" id="CFu-nW-TRn">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="clickCamera:" target="Voe-Tx-rLC" id="iOC-xP-3SJ"/>
+                        </connections>
+                    </button>
+                    <button ambiguous="YES" misplaced="YES" alphaValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jyi-On-pvf">
+                        <rect key="frame" x="20" y="20" width="16" height="16"/>
+                        <shadow key="shadow" blurRadius="5">
+                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </shadow>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Settings" imagePosition="only" alignment="center" alternateImage="Settings" imageScaling="proportionallyUpOrDown" inset="2" id="VOT-0J-V84">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="clickSettings:" target="Voe-Tx-rLC" id="Ops-ON-BV8"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QYb-Zi-UsX" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="T3L-As-99u"/>
+                    <constraint firstAttribute="bottom" secondItem="Jyi-On-pvf" secondAttribute="bottom" constant="20" id="iEA-P4-8wI"/>
+                    <constraint firstAttribute="bottom" secondItem="QYb-Zi-UsX" secondAttribute="bottom" constant="20" id="oSQ-rr-Yuw"/>
+                    <constraint firstItem="Jyi-On-pvf" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="oqJ-Ka-Pud"/>
+                </constraints>
+            </view>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="titlebarAppearsTransparent" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-577.5" y="-1117"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="guU-4Z-ErQ"/>
+        <window title="Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="ggh-Fn-57L" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="300" height="58"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="PnY-ge-BPu">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="58"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m8M-i6-del">
+                        <rect key="frame" x="10" y="34" width="280" height="15"/>
+                        <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" controlSize="mini" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="doQ-Oh-mYy" id="agJ-h3-ou4">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="miniSystem"/>
+                            <menu key="menu" id="71g-Nt-y6X">
+                                <items>
+                                    <menuItem title="Item 1" state="on" id="doQ-Oh-mYy"/>
+                                    <menuItem title="Item 2" id="iJw-wd-goy"/>
+                                    <menuItem title="Item 3" id="Wx8-ef-adz"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <binding destination="Voe-Tx-rLC" name="content" keyPath="availableDevices" id="UQy-xF-17P"/>
+                            <binding destination="Voe-Tx-rLC" name="contentValues" keyPath="availableDevices.localizedName" previousBinding="UQy-xF-17P" id="CJM-v0-Bfw"/>
+                            <binding destination="Voe-Tx-rLC" name="selectedObject" keyPath="selectedDevice" previousBinding="CJM-v0-Bfw" id="Dtu-JJ-oLy"/>
+                        </connections>
+                    </popUpButton>
+                    <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hKM-Ra-6pL">
+                        <rect key="frame" x="10" y="12" width="280" height="15"/>
+                        <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" controlSize="mini" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Egd-GH-VaA" id="YQG-DJ-kWy">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="miniSystem"/>
+                            <menu key="menu" id="wbA-j5-U3e">
+                                <items>
+                                    <menuItem title="Item 1" state="on" id="Egd-GH-VaA"/>
+                                    <menuItem title="Item 2" id="A9W-yd-b02"/>
+                                    <menuItem title="Item 3" id="oLu-Ov-dEg"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <binding destination="Voe-Tx-rLC" name="content" keyPath="availableFormats" id="lFR-Nb-zC3"/>
+                            <binding destination="Voe-Tx-rLC" name="contentValues" keyPath="availableFormats.localizedName" previousBinding="lFR-Nb-zC3" id="ZDT-G9-ecX"/>
+                            <binding destination="Voe-Tx-rLC" name="selectedObject" keyPath="selectedFormat" previousBinding="ZDT-G9-ecX" id="vZv-Xl-EZp"/>
+                        </connections>
+                    </popUpButton>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="-637.5" y="-817"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="Camera" width="64" height="64"/>
+        <image name="Settings" width="32" height="32"/>
+    </resources>
+</document>
