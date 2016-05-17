@@ -11,7 +11,7 @@ extension AVCaptureDeviceFormat {
                 let dimensions = CMVideoFormatDescriptionGetDimensions(description)
                 return String(format: "%@ (%d x %d)", formatName, dimensions.width, dimensions.height)
             }
-            return "Unsupported"
+            return "Unsupported/unkonwn format"
         }
     }
 }
